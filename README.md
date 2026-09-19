@@ -228,7 +228,7 @@ O projeto foi desenvolvido e testado no simulador Wokwi.
 
 Link do projeto:
 
-COLOCAR LINK DO WOKWI AQUI
+https://wokwi.com/projects/475635833842384897
 
 ---
 
