@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "author": "Cdmvitor",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -41.4, "left": -54.8, "attrs": {} },
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": -31.95,
+      "left": -178.8,
+      "attrs": { "env": "micropython-20260406-v1.28.0" }
+    },
+    { "type": "wokwi-led", "id": "led1", "top": 44.4, "left": 23, "attrs": { "color": "green" } },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": 44.4,
+      "left": 51.8,
+      "attrs": { "color": "yellow" }
+    },
+    { "type": "wokwi-led", "id": "led3", "top": 44.4, "left": 80.6, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 120,
+      "left": 9.05,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 120,
+      "left": 37.85,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 120,
+      "left": 66.65,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    }
+  ],
+  "connections": [
+    [ "led3:A", "bb1:15b.g", "", [ "$bb" ] ],
+    [ "led3:C", "bb1:14b.g", "", [ "$bb" ] ],
+    [ "led1:A", "bb1:9b.g", "", [ "$bb" ] ],
+    [ "led1:C", "bb1:8b.g", "", [ "$bb" ] ],
+    [ "led2:A", "bb1:12b.g", "", [ "$bb" ] ],
+    [ "led2:C", "bb1:11b.g", "", [ "$bb" ] ],
+    [ "r1:1", "bb1:8b.h", "", [ "$bb" ] ],
+    [ "r1:2", "bb1:bn.6", "", [ "$bb" ] ],
+    [ "r2:1", "bb1:11b.h", "", [ "$bb" ] ],
+    [ "r2:2", "bb1:bn.9", "", [ "$bb" ] ],
+    [ "r3:1", "bb1:14b.h", "", [ "$bb" ] ],
+    [ "r3:2", "bb1:bn.11", "", [ "$bb" ] ],
+    [ "pico:GND.1", "bb1:bn.1", "black", [ "h-38.4", "v201.6", "h144", "v-38.4" ] ],
+    [ "pico:GP3", "bb1:12b.h", "green", [ "h-19.2", "v192", "h268.8" ] ],
+    [ "pico:GP2", "bb1:9b.h", "green", [ "h-28.8", "v182.4", "h249.6" ] ],
+    [ "pico:GP4", "bb1:15b.h", "green", [ "h-9.6", "v153.6", "h288" ] ]
+  ],
+  "dependencies": {}
+}
